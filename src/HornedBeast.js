@@ -1,12 +1,30 @@
 import React, { Component } from 'react'
+import './HornedBeast.css'
+
 
 export default class HornedBeast extends Component {
+  constructor(props){
+    super(props);
+      this.state = {
+        likes: 0,
+        }
+  }
+
+handleLikes = () => {
+  this.setState({
+    likes: this.state.likes + 1
+  });
+}
   render() {
     return (
       <div>
-        <h2>{this.props.title}</h2>
-        <p>{this.props.description}</p>
-        <img src= {this.props.imageURL} alt={this.props.description}/>
+        <article>
+          <h2>{this.props.title}</h2>
+          <img src= {this.props.imageURL} alt={this.props.description}/>
+          <p>{this.props.description}</p>
+          <p> # of ❤️: {this.state.likes} </p>
+          <p onClick={this.handleLikes}>Click to Like!</p>
+        </article>
       </div>
     )
   }
