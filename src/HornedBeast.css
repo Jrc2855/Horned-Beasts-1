@@ -1,6 +1,6 @@
 /* This portion of Code was from the in class demo */
 
-article {
+section {
   border: 1px solid black;
   padding :1vw;
   margin-bottom: 1vw;
@@ -9,7 +9,7 @@ article {
   width: 70%;
 }
 
-article img{
+section img{
   width:100%;
 }
 
