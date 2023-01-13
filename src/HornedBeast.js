@@ -15,7 +15,7 @@ handleLikes = () => {
   });
 }
 
-  render() {
+render() {
     return (
       <div>
         <section>
